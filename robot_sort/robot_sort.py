@@ -102,6 +102,7 @@ class SortingRobot:
         # Bubble Sort is the simplest sorting algorithm 
         # that works by repeatedly swapping the adjacent elements 
         # if they are in wrong order
+        #https://www.geeksforgeeks.org/bubble-sort/ SOURCE
         list_length = len(self._list)
         for i in range(list_length):
             for j in range(0, list_length - i - 1):
