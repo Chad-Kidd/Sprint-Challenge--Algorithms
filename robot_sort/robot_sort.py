@@ -97,8 +97,17 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
-
+        # pass get rid of pass :P
+        #try bubble sort
+        # Bubble Sort is the simplest sorting algorithm 
+        # that works by repeatedly swapping the adjacent elements 
+        # if they are in wrong order
+        list_length = len(self._list)
+        for i in range(list_length):
+            for j in range(0, list_length - i - 1):
+                if self._list[j] > self._list[j+1]:
+                     self._list[j], self._list[j+1] = self._list[j+1], self._list[j]
+        return True
 
 if __name__ == "__main__":
     # Test our your implementation from the command line
