@@ -10,15 +10,16 @@ a)  a = 0
     while (a < n * n * n):
       a = a + n * n
 ```
-
+#a is constant input/runtime increase linear O(n)
 
 ```
 b)  sum = 0
-    for i in range(n):
-      j = 1
+    for i in range(n): #O(n)
+      j = 1 #O(1)
       while j < n:
-        j *= 2
-        sum += 1
+        j *= 2   nested and depends on for loop n to execute
+        sum += 1 #0(1)
+        O(n2)
 ```
 
 ```
